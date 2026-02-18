@@ -1,0 +1,27 @@
+{
+  "name": "stronghold-video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preview": "npx remotion preview src/index.ts",
+    "render": "npx remotion render src/index.ts StrongholdVideo out/stronghold.mp4",
+    "render:mp4": "npx remotion render src/index.ts StrongholdVideo out/stronghold.mp4 --codec h264",
+    "render:webm": "npx remotion render src/index.ts StrongholdVideo out/stronghold.webm --codec vp8"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@remotion/bundler": "^4.0.424",
+    "@remotion/cli": "^4.0.424",
+    "@remotion/player": "^4.0.424",
+    "@remotion/renderer": "^4.0.424",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.424",
+    "typescript": "^5.9.3"
+  }
+}
