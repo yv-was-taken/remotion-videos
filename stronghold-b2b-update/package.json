@@ -1,0 +1,27 @@
+{
+  "name": "stronghold-b2b-update",
+  "version": "1.0.0",
+  "description": "Stronghold B2B update announcement video",
+  "main": "index.js",
+  "scripts": {
+    "preview": "bunx remotion preview src/index.ts",
+    "render": "bunx remotion render src/index.ts B2BUpdateVideo out/stronghold-b2b.mp4",
+    "render:mp4": "bunx remotion render src/index.ts B2BUpdateVideo out/stronghold-b2b.mp4 --codec h264",
+    "render:webm": "bunx remotion render src/index.ts B2BUpdateVideo out/stronghold-b2b.webm --codec vp8"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@remotion/bundler": "^4.0.424",
+    "@remotion/cli": "^4.0.424",
+    "@remotion/player": "^4.0.424",
+    "@remotion/renderer": "^4.0.424",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.424",
+    "typescript": "^5.9.3"
+  }
+}
